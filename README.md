@@ -17,32 +17,6 @@ The application is built using **Python**, **Streamlit**, and the **Groq LLM API
 
 This project demonstrates the practical use of **Large Language Models (LLMs)** for interview preparation by combining prompt engineering, structured evaluation, and a simple web interface to simulate a real technical interview experience.
 
-## 3. Setup
-
-1. Install dependencies:
-   ```powershell
-   python -m pip install -r requirements.txt
-   ```
-
-2. Create a `.env` file in the project root and add your Groq API key:
-   ```text
-   GROQ_API_KEY=your_api_key_here
-   ```
-
-   On Windows PowerShell, do not execute `GROQ_API_KEY=...` directly, because PowerShell treats that as a command. Instead create the file with:
-   ```powershell
-   New-Item -Path .env -ItemType File -Force
-   Set-Content -Path .env -Value 'GROQ_API_KEY=your_api_key_here'
-   ```
-
-   Or open the file in a text editor:
-   ```powershell
-   notepad .env
-   ```
-
-3. Run the application:
-   ```powershell
-   streamlit run app.py
    ```
 
 ## 4. Environment Variables
