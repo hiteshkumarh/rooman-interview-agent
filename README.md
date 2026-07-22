@@ -1,74 +1,83 @@
-# Rooman-interview-agent
-AI Interview Agent built for the Rooman AI Challenge.
-## 1. Project Overview
+# 🤖 AI Interview Agent
 
-The **AI Interview Agent** is an intelligent interview preparation application developed for the **Rooman AI Challenge**. It provides a realistic, AI-powered technical interview experience by generating role-specific interview questions, evaluating user responses, and delivering detailed feedback with scores and improvement suggestions.
+An AI-powered technical interview platform built for the **Rooman AI Challenge**. The application generates role-specific interview questions, evaluates candidate responses using a Large Language Model (LLM), and provides detailed feedback with an overall performance report.
 
-The application is built using **Python**, **Streamlit**, and the **Groq LLM API** to create an interactive and responsive interview experience. Users can enter their profile details, take a personalized technical interview, receive instant AI-based evaluation, and optionally save their interview transcript for future review.
+---
 
-### 2. Key Features
-  
-* 🤖 AI-generated interview questions based on job role, skills, and experience.
-* 💬 Interactive interview session with one question at a time.
-* 📊 AI-powered evaluation with scores and constructive feedback.
-* 📄 Comprehensive interview report summarizing overall performance.
-* 💾 Manual interview transcript saving in JSON format.
-* 🎨 Clean and user-friendly Streamlit interface.
+# 1. Project Overview
 
-This project demonstrates the practical use of **Large Language Models (LLMs)** for interview preparation by combining prompt engineering, structured evaluation, and a simple web interface to simulate a real technical interview experience.
+The **AI Interview Agent** is an intelligent interview preparation application designed to simulate a real-world technical interview experience. Based on a candidate's job role, technical skills, and experience level, the system generates personalized interview questions, evaluates submitted answers using the **Groq LLM API**, and produces a comprehensive performance report.
 
-   
+Built with **Python** and **Streamlit**, the application provides an interactive and user-friendly interface while maintaining a modular architecture for easy maintenance and future enhancements.
 
-## 3. Environment Variables
+The project demonstrates the practical application of **Large Language Models (LLMs)**, prompt engineering, and AI-assisted evaluation to automate technical interviews and deliver instant, structured feedback.
 
-This project uses `python-dotenv` to load values from `.env` before `os.getenv()` is called. The Groq client initializes with `load_dotenv()` in `llm/client.py`, so `GROQ_API_KEY` is read from the `.env` file automatically.
+---
 
-## Tech Stack
+# 2. Features
 
-| Category                       | Technology    |
-| ------------------------------ | ------------- |
-| **Programming Language**       | Python 3.12   |
-| **Frontend / UI**              | Streamlit     |
-| **Large Language Model (LLM)** | Groq API      |
-| **Environment Management**     | python-dotenv |
-| **Data Storage**               | JSON          |
-| **Version Control**            | Git           |
-| **Repository Hosting**         | GitHub        |
+- 🤖 AI-generated interview questions based on candidate profile.
+- 👤 Candidate profile setup with role, skills, and experience.
+- 💬 Interactive interview session with one question at a time.
+- 🧠 AI-powered answer evaluation using the Groq LLM.
+- 📊 Detailed interview report with:
+  - Overall score
+  - Question-wise evaluation
+  - Strengths
+  - Areas for improvement
+  - Final recommendation
+- 💾 Manual interview transcript saving in JSON format.
+- 🔄 Start a new interview without restarting the application.
+- ⚡ Fast response generation using the Groq API.
+- 🎨 Clean and responsive Streamlit user interface.
+- 🔒 Secure API key management using environment variables.
+- 📂 Modular and scalable project architecture.
 
-### Core Python Libraries
+---
 
-* **Streamlit** – Interactive web application framework.
-* **Groq SDK** – Integration with the Groq Large Language Model.
-* **python-dotenv** – Loads environment variables from a `.env` file.
-* **JSON** – Stores interview transcripts and reports.
-* **OS** – File and directory operations.
-* **Datetime** – Generates timestamps for interview records.
-* **UUID** *(if used)* – Generates unique identifiers for interview sessions.
+# 3. Tech Stack
+
+| Category | Technology |
+|----------|------------|
+| **Programming Language** | Python 3.12 |
+| **Frontend / UI** | Streamlit |
+| **Large Language Model (LLM)** | Groq API |
+| **Environment Management** | python-dotenv |
+| **Data Storage** | JSON |
+| **Version Control** | Git |
+| **Repository Hosting** | GitHub |
+
+### Core Libraries
+
+- **Streamlit** – Interactive web application framework.
+- **Groq SDK** – AI-powered question generation and answer evaluation.
+- **python-dotenv** – Loads environment variables from a `.env` file.
+- **JSON** – Stores manually saved interview transcripts.
+- **OS** – Handles file and directory operations.
+- **Datetime** – Generates timestamps for interview records.
 
 ### Development Tools
 
-* Visual Studio Code
-* Git
-* GitHub
-* Python Virtual Environment (`venv`)
+- Visual Studio Code
+- Git
+- GitHub
+- Python Virtual Environment (`venv`)
 
-## 5. Installation Steps
+# 4. Installation
 
-Follow these steps to set up and run the AI Interview Agent on your local machine.
+Follow the steps below to set up and run the AI Interview Agent on your local machine.
 
-### Prerequisites
+## Prerequisites
 
-Before installing the project, make sure you have the following installed:
+Before installing the project, ensure you have the following installed:
 
-* Python 3.12 or later
-* Git
-* A Groq API Key (available from the Groq Console) 
+- Python 3.12 or later
+- Git
+- A Groq API Key (available from the Groq Console)
 
 ---
 
 ## Step 1: Clone the Repository
-
-Open your terminal or PowerShell and clone the repository:
 
 ```bash
 git clone https://github.com/hiteshkumarh/rooman-interview-agent.git
@@ -78,8 +87,6 @@ git clone https://github.com/hiteshkumarh/rooman-interview-agent.git
 
 ## Step 2: Navigate to the Project Directory
 
-Move into the project folder:
-
 ```bash
 cd rooman-interview-agent
 ```
@@ -88,15 +95,13 @@ cd rooman-interview-agent
 
 ## Step 3: Create a Virtual Environment
 
-Create a Python virtual environment to isolate project dependencies.
-
 **Windows**
 
 ```bash
 python -m venv .venv
 ```
 
-**Linux/macOS**
+**Linux / macOS**
 
 ```bash
 python3 -m venv .venv
@@ -106,25 +111,25 @@ python3 -m venv .venv
 
 ## Step 4: Activate the Virtual Environment
 
-**Windows (PowerShell)**
+### Windows (PowerShell)
 
 ```powershell
 .\.venv\Scripts\Activate
 ```
 
-**Windows (Command Prompt)**
+### Windows (Command Prompt)
 
 ```cmd
 .venv\Scripts\activate.bat
 ```
 
-**Linux/macOS**
+### Linux / macOS
 
 ```bash
 source .venv/bin/activate
 ```
 
-After activation, your terminal should display something similar to:
+After activation, your terminal should display:
 
 ```text
 (.venv)
@@ -132,9 +137,9 @@ After activation, your terminal should display something similar to:
 
 ---
 
-## Step 5: Install Project Dependencies
+## Step 5: Install Dependencies
 
-Install all required Python packages using:
+Install all required packages:
 
 ```bash
 pip install -r requirements.txt
@@ -144,19 +149,25 @@ Wait until the installation completes successfully.
 
 ---
 
-## Step 6: Configure Environment Variables
+# 5. Environment Variables
 
-Create a `.env` file in the project's root directory.
+This project uses **python-dotenv** to securely load environment variables from a `.env` file.
 
-**Windows (PowerShell)**
+## Create a `.env` File
+
+### Windows (PowerShell)
 
 ```powershell
 New-Item .env -ItemType File
 ```
 
-or simply create a file named `.env` manually.
+Or manually create a file named:
 
-Open the file and add your Groq API key:
+```text
+.env
+```
+
+Add your Groq API key:
 
 ```env
 GROQ_API_KEY=your_groq_api_key_here
@@ -164,27 +175,14 @@ GROQ_API_KEY=your_groq_api_key_here
 
 Replace `your_groq_api_key_here` with your actual Groq API key.
 
-> **Note:** Never commit your `.env` file to GitHub. The repository includes a `.env.example` file as a reference.
+> **Important**
+>
+> - Never commit your `.env` file to GitHub.
+> - Use the provided `.env.example` file as a reference.
 
 ---
 
-## Step 7: Verify the Installation
-
-Check that the virtual environment is active and the required packages are installed:
-
-```bash
-pip list
-```
-
-You should see packages such as:
-
-* streamlit
-* groq
-* python-dotenv
-
----
-
-## Step 8: Launch the Application
+# 6. Run the Project
 
 Start the Streamlit application:
 
@@ -197,11 +195,26 @@ or
 ```bash
 streamlit run app.py
 ```
+
+Once the application starts successfully, Streamlit will display a URL similar to:
+
+```text
+Local URL: http://localhost:8501
+```
+
+Open the URL in your browser to access the AI Interview Agent.
+
+To stop the application, press:
+
+```text
+Ctrl + C
+```
+
 ---
 
-## Sample Input
+# 7. Sample Input
 
-Use the following sample candidate profile to test the application after it starts.
+Use the following sample profile to test the application.
 
 | Field | Value |
 |-------|-------|
@@ -222,193 +235,153 @@ Experience: Fresher
 After entering the above details:
 
 1. Click **Start Interview**.
-2. Answer the generated interview questions.
+2. Answer all AI-generated interview questions.
 3. Submit your responses.
-4. Review the AI-generated evaluation report.
-5. Optionally click **Save Interview** to save the transcript manually.
+4. Review the evaluation report.
+5. Click **Save Interview** to manually save the transcript (optional).
 
----
----
-
-## Step 9: Access the Application
-
-Once the application starts successfully, Streamlit will display a local URL similar to:
-
-```text
-Local URL: http://localhost:8501
-```
-
-Open the URL in your web browser to begin using the AI Interview Agent.
-
----
-
-## Step 10: Stop the Application
-
-To stop the application, return to the terminal and press:
-
-```text
-Ctrl + C
-```
-
-To run the application again later:
-
-1. Open the project folder.
-2. Activate the virtual environment.
-3. Run:
-
-```bash
-python -m streamlit run app.py
-```
-
-The AI Interview Agent is now ready to use.
-
-## 6. Project Structure
+# 8. Project Structure
 
 ```text
 rooman-interview-agent/
 │
 ├── assets/
-│   └── Images and static resources used in the application.
+│   └── Images and static resources
 │
 ├── config/
-│   └── Configuration files and application settings.
+│   └── Application configuration files
 │
 ├── llm/
-│   ├── client.py          # Groq API client and LLM initialization
-│   └── prompts.py         # Prompt templates for question generation and evaluation
+│   ├── client.py
+│   └── prompts.py
 │
 ├── models/
-│   └── Data models used throughout the application.
+│   └── Data models
 │
 ├── services/
-│   ├── evaluator.py           # Evaluates candidate answers
-│   ├── interview_service.py   # Manages the complete interview workflow
-│   ├── question_generator.py  # Generates AI interview questions
-│   ├── report_generator.py    # Creates the final interview report
-│   └── transcript_service.py  # Handles manual transcript saving
+│   ├── evaluator.py
+│   ├── interview_service.py
+│   ├── question_generator.py
+│   ├── report_generator.py
+│   └── transcript_service.py
 │
 ├── storage/
-│   ├── json_storage.py        # JSON storage utility
-│   └── transcripts/           # Stores manually saved interview transcripts
+│   ├── json_storage.py
+│   └── transcripts/
 │
 ├── tests/
-│   └── Unit and integration tests.
+│   └── Test documentation
 │
 ├── utils/
-│   └── Helper functions and reusable utility modules.
+│   └── Utility functions
 │
-├── .env.example          # Sample environment variables
-├── .gitignore            # Git ignore rules
-├── app.py                # Streamlit application entry point
-├── README.md             # Project documentation
-├── requirements.txt      # Python dependencies
-└── LICENSE               # Project license (optional)
+├── .env.example
+├── .gitignore
+├── app.py
+├── README.md
+├── requirements.txt
+└── LICENSE (Optional)
 ```
 
-### Folder Description
+## Folder Description
 
-| Folder/File          | Description                                                                                                                       |
-| -------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| **app.py**           | Main Streamlit application that provides the user interface and controls the interview workflow.                                  |
-| **llm/**             | Contains the Groq client and prompt templates used for AI-powered question generation and evaluation.                             |
-| **services/**        | Implements the core business logic including interview management, answer evaluation, report generation, and transcript handling. |
-| **storage/**         | Manages JSON-based storage for manually saved interview transcripts.                                                              |
-| **models/**          | Stores data models used within the application.                                                                                   |
-| **config/**          | Contains application configuration files and settings.                                                                            |
-| **utils/**           | Includes reusable helper functions and utility modules.                                                                           |
-| **assets/**          | Stores static assets such as images and icons used in the application.                                                            |
-| **tests/**           | Contains test files for validating application functionality.                                                                     |
-| **requirements.txt** | Lists all required Python packages and dependencies.                                                                              |
-| **.env.example**     | Template showing the required environment variables.                                                                              |
-| **README.md**        | Documentation explaining installation, usage, and project details.                                                                |
-| **.gitignore**       | Specifies files and folders that should not be tracked by Git.                                                                   |
-
-## Usage
-
-After launching the application, follow these steps:
-
-1. **Launch the Application**
-
-   * Start the Streamlit application using:
-
-     ```bash
-     streamlit run app.py
-     ```
-   * Open the local URL displayed in your terminal (usually `http://localhost:8501`).
-
-2. **Enter Candidate Details**
-
-   * Provide your:
-
-     * Job Role
-     * Technical Skills
-     * Years of Experience
-
-3. **Start the Interview**
-
-   * Click the **Start Interview** button.
-   * The AI generates personalized interview questions based on your profile.
-
-4. **Answer the Questions**
-
-   * Read each question carefully.
-   * Enter your answer in the provided text area.
-   * Submit your response to proceed to the next question.
-
-5. **View the Evaluation**
-
-   * After completing all questions, the AI evaluates your responses.
-   * Review:
-
-     * Overall Score
-     * Question-wise Feedback
-     * Strengths
-     * Areas for Improvement
-     * Final Recommendation
-
-6. **Save Interview Transcript (Optional)**
-
-   * Click the **Save Interview** button to manually save your interview transcript in JSON format.
-   * The transcript is stored in the `storage/transcripts/` directory.
-
-7. **Start a New Interview**
-
-   * Click **Start New Interview** to begin another interview session with a different profile.
+| Folder / File | Description |
+|--------------|-------------|
+| **app.py** | Entry point of the Streamlit application. Handles the user interface and interview workflow. |
+| **llm/** | Contains the Groq client and prompt templates used for AI-powered question generation and answer evaluation. |
+| **services/** | Implements the core business logic including interview management, evaluation, report generation, and transcript handling. |
+| **storage/** | Stores interview transcripts in JSON format after manual saving. |
+| **models/** | Contains data models used throughout the application. |
+| **config/** | Stores application configuration files and settings. |
+| **utils/** | Contains reusable helper functions and utility modules. |
+| **assets/** | Stores static assets such as images and screenshots used by the project. |
+| **tests/** | Contains test documentation and validation scenarios. |
+| **requirements.txt** | Lists all required Python packages and dependencies. |
+| **.env.example** | Sample environment variables required to run the application. |
+| **README.md** | Project documentation including installation, usage, and project details. |
+| **.gitignore** | Specifies files and directories that should not be tracked by Git. |
 
 ---
 
-# Screenshots
+# 9. Usage
 
+After launching the application, follow these steps to complete an interview.
 
-### Landing Page
+## Step 1: Launch the Application
 
-![Landing Page](./landing-page.png.png)
+Run the application:
 
-### Dashboard
+```bash
+streamlit run app.py
+```
 
-![Dashboard](./dashboard.png.png)
+Open the URL displayed in the terminal (usually):
 
-### Interview Questions
+```text
+http://localhost:8501
+```
 
-![Interview Questions](./interview.png.png)
-
-### Evaluation Report
-
-![Evaluation Report](./evaluation.png.png)
 ---
 
-# Future Improvements
+## Step 2: Enter Candidate Details
 
-The following enhancements are planned for future versions of the AI Interview Agent:
+Provide the following information:
 
-* Add voice-based interviews using Speech-to-Text and Text-to-Speech.
-* Support multiple interview domains such as Frontend, Backend, Data Science, DevOps, and Cloud.
-* Generate downloadable PDF interview reports.
-* Provide detailed analytics and performance tracking across multiple interview sessions.
-* Add user authentication and personalized interview history.
-* Support follow-up questions based on previous answers for a more realistic interview experience.
-* Enable multilingual interview support.
-* Integrate a database (e.g., PostgreSQL or MongoDB) for persistent storage.
-* Deploy the application on a cloud platform for public access.
-* Support multiple LLM providers (e.g., Groq, OpenAI, Gemini) with configurable model selection.
-* Add an admin dashboard to monitor usage and interview statistics.
+- **Job Role**
+- **Technical Skills**
+- **Experience Level**
+
+Example:
+
+```text
+Role: Python Developer
+Skills: Python, FastAPI, SQL, Git
+Experience: Fresher
+```
+
+---
+
+## Step 3: Start the Interview
+
+Click the **Start Interview** button.
+
+The AI Interview Agent generates personalized technical interview questions based on the candidate profile.
+
+---
+
+## Step 4: Answer the Questions
+
+- Read each question carefully.
+- Enter your answer in the provided text area.
+- Submit your response.
+- Continue until all interview questions are completed.
+
+---
+
+## Step 5: Review the Evaluation Report
+
+After completing the interview, the AI evaluates your responses and generates a report that includes:
+
+- Overall Interview Score
+- Question-wise Evaluation
+- Strengths
+- Areas for Improvement
+- Final Recommendation
+
+---
+
+## Step 6: Save the Interview (Optional)
+
+Click **Save Interview** to manually save the interview transcript.
+
+The transcript is stored as a JSON file in:
+
+```text
+storage/transcripts/
+```
+
+---
+
+## Step 7: Start a New Interview
+
+Click **Start New Interview** to begin another interview session with a different candidate profile.
