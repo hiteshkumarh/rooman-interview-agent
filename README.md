@@ -223,7 +223,37 @@ or
 ```bash
 streamlit run app.py
 ```
+---
 
+## Sample Input
+
+Use the following sample candidate profile to test the application after it starts.
+
+| Field | Value |
+|-------|-------|
+| **Role** | Python Developer |
+| **Skills** | Python, FastAPI, SQL, Git |
+| **Experience** | Fresher |
+
+### Example
+
+```text
+Role: Python Developer
+
+Skills: Python, FastAPI, SQL, Git
+
+Experience: Fresher
+```
+
+After entering the above details:
+
+1. Click **Start Interview**.
+2. Answer the generated interview questions.
+3. Submit your responses.
+4. Review the AI-generated evaluation report.
+5. Optionally click **Save Interview** to save the transcript manually.
+
+---
 ---
 
 ## Step 9: Access the Application
