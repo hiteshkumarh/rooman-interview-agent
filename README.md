@@ -164,12 +164,12 @@ New-Item .env -ItemType File
 Or manually create a file named:
 
 ```text
-.env
+notepad .env
 ```
 
 Add your Groq API key:
 
-```env
+```Notepad will open the file.
 GROQ_API_KEY=your_groq_api_key_here
 ```
 
