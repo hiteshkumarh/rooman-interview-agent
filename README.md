@@ -88,7 +88,7 @@ Before installing the project, make sure you have the following installed:
 
 * Python 3.12 or later
 * Git
-* A Groq API Key (available from the Groq Console)
+* A Groq API Key (available from the Groq Console) 
 
 ---
 
