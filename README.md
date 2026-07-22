@@ -245,8 +245,7 @@ After entering the above details:
 ```text
 rooman-interview-agent/
 │
-├── assets/
-│   └── Images and static resources
+│   
 │
 ├── config/
 │   └── Application configuration files
