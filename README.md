@@ -16,22 +16,22 @@ The project demonstrates the practical application of **Large Language Models (L
 
 # 2. Features
 
-- 🤖 AI-generated interview questions based on candidate profile.
-- 👤 Candidate profile setup with role, skills, and experience.
-- 💬 Interactive interview session with one question at a time.
-- 🧠 AI-powered answer evaluation using the Groq LLM.
-- 📊 Detailed interview report with:
+-  AI-generated interview questions based on candidate profile.
+-  Candidate profile setup with role, skills, and experience.
+-  Interactive interview session with one question at a time.
+-  AI-powered answer evaluation using the Groq LLM.
+-  Detailed interview report with:
   - Overall score
   - Question-wise evaluation
   - Strengths
   - Areas for improvement
   - Final recommendation
-- 💾 Manual interview transcript saving in JSON format.
-- 🔄 Start a new interview without restarting the application.
-- ⚡ Fast response generation using the Groq API.
-- 🎨 Clean and responsive Streamlit user interface.
-- 🔒 Secure API key management using environment variables.
-- 📂 Modular and scalable project architecture.
+-  Manual interview transcript saving in JSON format.
+-  Start a new interview without restarting the application.
+-  Fast response generation using the Groq API.
+-  Clean and responsive Streamlit user interface.
+-  Secure API key management using environment variables.
+-  Modular and scalable project architecture.
 
 ---
 
@@ -458,16 +458,16 @@ The current version of the AI Interview Agent has the following limitations:
 
 The following enhancements are planned for future versions:
 
-- 🎤 Add voice-based interviews using Speech-to-Text and Text-to-Speech.
-- 🌐 Support multilingual interviews.
-- 📄 Generate downloadable PDF interview reports.
-- 📊 Add interview analytics and performance tracking.
-- 👤 Implement user authentication and interview history.
-- 🤖 Support adaptive follow-up questions based on previous answers.
-- 💾 Integrate PostgreSQL or MongoDB for persistent storage.
-- ☁️ Deploy the application to a cloud platform.
-- 🔄 Support multiple LLM providers such as Groq, OpenAI, and Gemini.
-- 📈 Develop an admin dashboard for monitoring interview statistics.
+-  Add voice-based interviews using Speech-to-Text and Text-to-Speech.
+-  Support multilingual interviews.
+-  Generate downloadable PDF interview reports.
+-  Add interview analytics and performance tracking.
+-  Implement user authentication and interview history.
+-  Support adaptive follow-up questions based on previous answers.
+-  Integrate PostgreSQL or MongoDB for persistent storage.
+-  Deploy the application to a cloud platform.
+-  Support multiple LLM providers such as Groq, OpenAI, and Gemini.
+-  Develop an admin dashboard for monitoring interview statistics.
 
 ---
 
