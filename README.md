@@ -375,42 +375,22 @@ After launching the application, follow these steps:
 
 # Screenshots
 
-> Add screenshots of the application to help users understand the workflow.
 
 ### Landing Page
 
-*(Insert screenshot here)*
-
-```
-assets/screenshots/landing-page.png
-```
+![Landing Page](./landing-page.png.png)
 
 ### Dashboard
 
-*(Insert screenshot here)*
-
-```
-assets/screenshots/dashboard.png
-```
+![Dashboard](./dashboard.png.png)
 
 ### Interview Questions
 
-*(Insert screenshot here)*
-
-```
-assets/screenshots/interview.png
-```
+![Interview Questions](./interview.png.png)
 
 ### Evaluation Report
 
-*(Insert screenshot here)*
-
-```
-assets/screenshots/evaluation.png
-```
-
-> **Optional:** You can also include a short GIF demonstrating the complete interview flow.
-
+![Evaluation Report](./evaluation.png.png)
 ---
 
 # Future Improvements
