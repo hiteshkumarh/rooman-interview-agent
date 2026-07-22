@@ -17,9 +17,9 @@ The application is built using **Python**, **Streamlit**, and the **Groq LLM API
 
 This project demonstrates the practical use of **Large Language Models (LLMs)** for interview preparation by combining prompt engineering, structured evaluation, and a simple web interface to simulate a real technical interview experience.
 
-   ```
+   
 
-## 4. Environment Variables
+## 3. Environment Variables
 
 This project uses `python-dotenv` to load values from `.env` before `os.getenv()` is called. The Groq client initializes with `load_dotenv()` in `llm/client.py`, so `GROQ_API_KEY` is read from the `.env` file automatically.
 
