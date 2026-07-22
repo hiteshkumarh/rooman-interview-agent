@@ -7,7 +7,7 @@ The **AI Interview Agent** is an intelligent interview preparation application d
 The application is built using **Python**, **Streamlit**, and the **Groq LLM API** to create an interactive and responsive interview experience. Users can enter their profile details, take a personalized technical interview, receive instant AI-based evaluation, and optionally save their interview transcript for future review.
 
 ### 2. Key Features
-
+  
 * 🤖 AI-generated interview questions based on job role, skills, and experience.
 * 💬 Interactive interview session with one question at a time.
 * 📊 AI-powered evaluation with scores and constructive feedback.
