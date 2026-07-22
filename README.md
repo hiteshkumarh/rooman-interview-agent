@@ -392,7 +392,7 @@ The following screenshots demonstrate the workflow of the AI Interview Agent.
 
 ## Landing Page
 
-![Landing Page](assets/screenshots/landing-page.png)
+![Landing Page](./landing-page.png)
 
 *The landing page introduces the AI Interview Agent and allows users to begin a new interview session.*
 
@@ -400,7 +400,7 @@ The following screenshots demonstrate the workflow of the AI Interview Agent.
 
 ## Dashboard
 
-![Dashboard](assets/screenshots/dashboard.png)
+![Dashboard](./dashboard.png)
 
 *The dashboard collects the candidate's role, technical skills, and experience before starting the interview.*
 
@@ -408,7 +408,7 @@ The following screenshots demonstrate the workflow of the AI Interview Agent.
 
 ## Interview Questions
 
-![Interview Questions](assets/screenshots/interview.png)
+![Interview Questions](./interview.png)
 
 *The interview page displays AI-generated technical questions and allows candidates to submit their responses.*
 
@@ -416,7 +416,7 @@ The following screenshots demonstrate the workflow of the AI Interview Agent.
 
 ## Evaluation Report
 
-![Evaluation Report](assets/screenshots/evaluation.png)
+![Evaluation Report](./evaluation.png)
 
 *After completing the interview, the AI generates a detailed evaluation report with scores, feedback, strengths, and improvement suggestions.*
 
