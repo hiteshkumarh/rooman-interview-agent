@@ -1,4 +1,4 @@
-# rooman-interview-agent
+# Rooman-interview-agent
 AI Interview Agent built for the Rooman AI Challenge.
 ## 1. Project Overview
 
