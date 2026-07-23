@@ -2,7 +2,7 @@
 
 An AI-powered technical interview platform built for the **Rooman AI Challenge**. The application generates role-specific interview questions, evaluates candidate responses using a Large Language Model (LLM), and provides detailed feedback with an overall performance report.
 
----
+---  
 
 # 1. Project Overview
 
