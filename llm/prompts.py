@@ -3,7 +3,7 @@ Prompt templates for the Rooman Interview Agent.
 
 This module contains reusable prompt templates for:
 1. Interview question generation
-2. Candidate answer evaluation
+2. Candidate answer evaluation   
 3. Final interview report generation
 """
 
